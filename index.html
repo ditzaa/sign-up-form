@@ -15,37 +15,88 @@
       </div>
       <h4>
         Photo by
-        <a href="">Halle West</a>
+        <a href="https://unsplash.com/@haliewestphoto">Halle West</a>
         on
-        <a href="">Unsplash</a>
+        <a href="https://unsplash.com/">Unsplash</a>
       </h4>
     </aside>
     <main>
       <header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, velit.
-          Quas, voluptas praesentium hic soluta reiciendis magnam? ?
+        <p style="margin-bottom: 0px">
+          This is not a real online service!You know you need something like
+          this in your life to help you realize your deepest dreams.
         </p>
-        <p>
-          Voluptatum, asperiores velit quibusdam eos quod, necessitatibus dicta
-          quae ad, odio cum assumenda
-        </p>
+        <p style="margin-top: 0px">Sign up now to get started!</p>
         <p>You know you want to.</p>
       </header>
 
-      <form action="example.com/path" method="post">
+      <form action="example.com/path" method="post" id="my-form">
         <h2>Let's do this!</h2>
-        <div class="form-row">
+        <fieldset>
           <div>
             <label for="firstname">FIRST NAME</label>
-            <input type="text" id="firstname" name="firstname" />
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              minlength="2"
+              maxlength="100"
+            />
           </div>
           <div>
-            <label for="password">LAST NAME</label>
-            <input type="lastname" id="lastname" name="lastname" />
+            <label for="lastname">LAST NAME</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              minlength="2"
+              maxlength="100"
+            />
           </div>
-        </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
+            />
+          </div>
+          <div>
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirmPpassword"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
+            />
+          </div>
+        </fieldset>
       </form>
+      <button type="submit" form="my-form">Create Account</button>
+      <div class="to-login-container">
+        <span>Already have an account?</span>
+        <span>
+          <a
+            href="https://www.youtube.com/watch?v=0UT2E7o5Gkw&ab_channel=MusicStation20"
+            >Log in</a
+          ></span
+        >
+      </div>
     </main>
   </body>
 </html>
