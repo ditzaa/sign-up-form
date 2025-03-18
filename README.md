@@ -1,4 +1,4 @@
-# sign-up-form
+# 📝sign-up-form
 I built this project to apply the intermediate HTML and CSS concepts (advanced selectors, custom properties, forms, etc.) learned in the Odin Project curriculum. The goal is to create a sign-up form for an imaginary service, focusing on layout structure, styling techniques and basic form validation.
 
 ### Project Requirements
