@@ -82,6 +82,10 @@ main header {
   font-weight: 600;
 }
 
+main header p {
+  max-width: 70%;
+}
+
 main form {
   background-color: var(--form-bg-color);
   padding-left: 50px;
